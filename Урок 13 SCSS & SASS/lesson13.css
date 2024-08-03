@@ -1,0 +1,41 @@
+.link__2 {
+  color: burlywood;
+  text-decoration: 2px dashed green;
+}
+body {
+  background: linear-gradient(black, white);
+  height: 400vh;
+}
+hr {
+  color: whitesmoke;
+}
+.block {
+  background-color: bisque;
+  width: 31.25;
+  margin: 0px auto;
+  color: orange;
+  font-size: large;
+  text-align: center;
+}
+.block .text {
+  color: yellow;
+  font-size: xx-large;
+}
+.block span {
+  color: red;
+}
+.link {
+  color: white;
+  text-decoration: underline;
+}
+.link:hover {
+  color: orange;
+  font-size: small;
+}
+.link__2 {
+  font-size: 100px;
+}
+.link__2:hover {
+  color: orange;
+  border-bottom: 2px solid black;
+}

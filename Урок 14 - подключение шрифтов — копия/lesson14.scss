@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nabla:EDPT@0&display=swap');
+
+
+$fz:xx-large;
+$cl: whitesmoke;
+$pd:15px;
+$bgc:black;
+
+body{
+    
+    background-color: $bgc;
+}
+.text{
+    font-family:"nabla";
+    font-size: $fz;
+    color: $cl;
+    padding:$pd;
+    p{
+        line-height: 10px;
+    }
+}
+
+.org{
+    padding-bottom: 40px;
+    p{
+        color: $cl;
+        font-size:xx-large ;
+    }
+}
+
+.link{
+    h1{
+        text-align: center;
+        color: orange;
+        font-size: larger;
+        font-family:"nabla";
+    }
+    p{
+        color: whitesmoke;
+        text-align: center;
+    }
+}
+
+.button{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 4px;
+    margin-left: 910px;
+    padding: 5px 12px 7px 12px;
+    &:hover{
+        background-color: black;
+        color: white;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+a{
+    &:link{
+        color: rgb(0, 0, 0); 
+    }
+    &:visited{
+        color: orange;
+    }
+    &:active{
+        color: greenyellow;
+    }
+}

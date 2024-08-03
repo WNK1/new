@@ -1,0 +1,60 @@
+// @import "nyllstyle.scss"; 
+//-как прописывается импорт файла в css например обнуление стилей которое мы не часто изменяем но подтягиваем в каждый проект 
+
+
+//привмер назначиния переменных - после того как переменные определенны то их обозначения ($cl,$h) можно записывать в параметры 
+$cl:orange;
+$h:400vh;
+
+%shablonlinks{ // создания шаблона 
+    color: burlywood;
+    text-decoration: 2px dashed green;
+}
+
+@mixin first ($f) { // создание максина , отличие от шаблона что в максины мы можем обозначать переменные и уже в том теге куда хотим его импортировать можем задавать значения , 
+                    //а не как с шаблонами что для всех тегов к оторым мы их будем ипортировать значения будут одинаковыми  
+    font-size:$f;
+}
+
+body{
+    background: linear-gradient(black, white);
+    height: $h; //примерн назначенной переменной которая передается 
+}
+hr{
+    color: whitesmoke;
+}
+
+//пример вложенности - в scss ( text , span )
+.block{
+    background-color: bisque;
+    width: 300px / 960px *100; //пример scss что в нем можно использовать математические свойства 
+    margin: 0px auto;
+    color:$cl;
+    font-size:large;
+    text-align: center;
+    .text{
+        color: yellow;
+        font-size: xx-large;
+    }
+    span{
+        color: red;
+    }
+}
+
+.link{
+    color: white;
+    text-decoration: underline;
+    &:hover{
+        color: $cl;
+        font-size: small;
+    }
+}
+
+.link__2{
+    &:hover{ // & подтягивает название родительского элемента к которому нужно прописать параметры/свойства 
+        color: orange;
+        border-bottom: 2px solid black;
+    }
+    @include first(100px); // доп свойство , связанно с mixin
+    @extend %shablonlinks; //доп свойсво , связанно с шаблонами %shablonlinks
+}
