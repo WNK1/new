@@ -1,0 +1,68 @@
+@import "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+.cormorant-garamond-regular-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  background: linear-gradient(black, rgb(46, 46, 46));
+  font-family: "Cormorant Garamond";
+  line-height: 5px;
+  height: 400vh;
+}
+
+hr {
+  color: grey;
+  height: 3px;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+  width: 8px;
+  height: 400vh;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  color: rgb(214, 26, 26);
+  border-radius: 3px;
+}
+
+.wrapper {
+  font-family: "Cormorant Garamond";
+}
+
+.block .block-footer {
+  display: flex;
+  justify-content: space-evenly;
+  border: 20px solid orange;
+  margin: 0px 0px 20px 0px;
+}
+.block .block-footer .block__column {
+  border: aquamarine;
+}
+.block .block-footer .block__column .block__item {
+  background-color: bisque;
+  padding: 50px;
+  font-size: 50px;
+  color: whitesmoke;
+  font-weight: 900;
+  border: 1px dotted orange;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 5px;
+  margin: 10px;
+  border: 2px solid orange;
+  border-radius: 8px;
+  box-shadow: 2px 3px 3px 2px rgb(128, 128, 128);
+}
+.text .term {
+  text-align: center;
+  text-decoration: underline;
+  color: beige;
+  padding: 15px 2px 15px 2px;
+}/*# sourceMappingURL=lessons17.css.map */

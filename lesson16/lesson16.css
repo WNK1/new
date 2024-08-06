@@ -1,0 +1,50 @@
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+body {
+  font-family: "Playfair Display";
+  text-align: center;
+  margin: 3px 30px 0px 30px;
+  background: black;
+  color: rgb(206, 206, 180);
+  font-size: larger;
+  max-width: 823px;
+  margin: 0px auto;
+  height: 500vh;
+}
+
+.term {
+  color: rgb(206, 206, 180);
+  font-size: larger;
+  max-width: 723px;
+  margin: 0px auto;
+  height: 1400px;
+}
+.term__1 {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  margin-top: 220px;
+  max-height: 80px;
+}
+.term__2 {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  margin-top: 220px;
+  max-height: 80px;
+}
+.term__3 {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  margin-top: 120px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+a:visited {
+  color: beige;
+}
+a:hover {
+  color: orange;
+}/*# sourceMappingURL=lesson16.css.map */
