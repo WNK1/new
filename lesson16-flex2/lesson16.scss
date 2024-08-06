@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nabla:EDPT@0&display=swap";
+
+
+%shablonlinks{
+    
+
+}
+
+
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family:"Bungee Spice";
+    height: 400vh;
+}
+.flex-top {
+    border: 2px solid orange;
+    border-radius: 4px;
+    box-shadow: 2px 3px 3px 2px whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    .flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        .flexboxitem__1 {
+            font-size: 48px;
+            border: 2px solid orange;
+            padding: 9px;
+
+        }
+        .flexboxitem__2 {
+            font-size: 48px;
+            border: 2px solid orange;
+            padding: 9px;
+            
+        }
+        .flexboxitem__3 {
+            font-size: 48px;
+            border: 2px solid orange;
+            padding: 9px;
+            
+        }
+    }
+}
+.flex-bottom {
+}
+.flexbox-text {
+    .flexbox-term__1 {
+        .flexbox-foto-1 {
+        }
+    }
+    .flexbox-term__2 {
+    }
+    .flexbox-term__3 {
+    }
+    .flexbox-term__4 {
+    }
+    .flexbox-term__5 {
+    }
+    .flexbox-term__6 {
+    }
+}
+
+
+.flex-direction {
+}
+.flexboxDD {
+}
+.flex-direction__1 {
+}
+.flex-direction__2 {
+}
+

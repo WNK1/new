@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16 - flex 2</title>
+    <link rel="stylesheet" href="lesson16.css">
+</head>
+<body>
+    <div class="flex-top">
+        <div class="flexbox">
+            <div class="flexboxitem__1">
+                first block 
+            </div>
+            <div class="flexboxitem__2">
+                second block 
+            </div>
+            <div class="flexboxitem__3">
+                third block 
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-bottom">
+        <div class="flexbox-text">
+            <div class="flexbox-term__1">
+                    <h2>align-self</h2>
+                    <p>Выполняет всю ту же функцию что и align items , только помогает опрделенному контейнеру перезаписать свойство расположениия ,</p>
+                    <p> например с align-items:centre - выравнивание элементов к одному расположение по центру род.блока у первого , </p>
+                    <p>а 2 что бы у нас встал на например ниже align-self:flex-end</p>
+                <div class="flexbox-foto-1">
+                    <img src="https://media1.tenor.com/m/r_m40W-9hREAAAAC/dump-btc.gif" alt="oops..."> 
+                </div>
+            </div>
+            <div class="flexbox-term__2">
+                <h2>Order</h2> 
+                <p>простенькое свойство которое изменяет порядок элементов [ 1 элемент стал 3 , 2 остался на месте , а 3 встал на 1 место ] </p>
+                <p>если прописваем данное свойство то должны указать order у всех элементов в блоке </p>
+            </div>
+            <div class="flexbox-term__3">
+                <h2>flex-basic</h2>
+                <p>управляет размером элемента </p>
+            </div>
+            <div class="flexbox-term__4">
+                <h2> flex-grow</h2>
+                <p> управляет возможностью увеличиваться флекс элемету / отталкивается от flex basic , имеет значение 0 и 1 где 0 означает что флексу запрещено изменть свой размер а 1 что он расстянется во всю ширину и высоту флекс контейнера </p>
+            </div>
+            <div class="flexbox-term__5">
+                <h2>flex-shrink</h2>
+                <p> управляект возможностью уменьшать в размере флекс контейнер , например при изминении окна браузера 0-запрещенно 1-разрешенно </p>
+            </div>
+            <div class="flexbox-term__6">
+                <h2> Короткая запись всех flex -</h2>
+                <p> flex: 1 значение это flex-grow 2 значение - flex-shrink и 3 - flex-basic</p>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="flex-direction">
+        <div class="flexboxDD">
+            <div class="flex-direction__1">
+                <h2>flex-direction</h2>
+                <p>устанавливает ось по которой выстраиваюстья элементы - изначально имеет значение row , значение reverse - зеркалит элемент </p>
+            </div>
+            <div class="flex-direction__2">
+                <h2>flex-direction:column</h2>
+                <p>выстраивает элементы в колонки и делает их по типу строчных тегов</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+        
+
+    
+</body>
+</html>
