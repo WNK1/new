@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container {
+  max-width: 1280px;
+  margin: 0px auto;
+}
+.wrapper .content {
+  flex: 1 0 auto;
+}
+.wrapper .hi {
+  background-color: #445162;
+}
+.wrapper .hi__row {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+.wrapper .hi__title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.wrapper .hi__li {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.wrapper .hi__li li {
+  background: url("lesson17.html/check_icon_346.png") 0px 0px no-repeat;
+}
+.wrapper .hi__img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #F5F5F5;
+}
+
+.footer_row {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #445162;
+}/*# sourceMappingURL=lesson17.css.map */
