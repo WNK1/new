@@ -66,6 +66,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aspernatur omnis deserunt, dolorem minus ad cupiditate perferendis illum necessitatibus impedit voluptate, eaque totam dolorum, voluptatum quos maxime sequi ex reprehenderit.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a consequuntur, dicta est dolores quae, ducimus tenetur fugiat expedita ea ipsa obcaecati corrupti quas eveniet non cum. Facere, adipisci enim?</p>
             </div>
+        </div>
+        <div class="text">
             <div class="text-img">
                 <div class="text-img__sours">
                     <img src="https://htmlburger.com/blog/wp-content/uploads/2023/04/Black-Websites-and-Dark-Mode-Examples-Beyond-the-Stars-Concept.png" alt="problems, sorry..">
@@ -121,7 +123,7 @@
     </div>
     <div class="term-2__2">
         если мы хотим что бы изображение менялось или же меняло свой размер - то есть размер будет задан под каждый тип экранов , и он был фиксированы 
-        то м ыможем сделать это с помощью 
+        то мы можем сделать это с помощью медиа запросов
         <picture>
             <source srcset=".." type="jpeg or t.d" media="под какой размер подстроить ">
             <source>
@@ -129,5 +131,121 @@
         </picture>
     </div>
 </div>
+
+<hr>
+<h2>Изучение тега transform и его подтегов-свойств</h2>
+    <div class="translate">
+        <div class="translate__title">
+            Свойтство translate
+        </div>
+        <div class="translate__block">
+            translate
+        </div>
+        <div class="translate__term">
+            translate - сдвигает элемент на новое место, перемещая относительно изначального положения объекта вправо и вниз, используя координаты X и Y. Записывается следующим образом translate (x,y);
+        </div>
+    </div>
+    <div class="scale">
+        <div class="scale__title">
+            Свойтство scale
+        </div>
+        <div class="scale__block">
+            scale
+        </div>
+        <div class="scale__term">
+            scale - масштабирует элементы, делая их больше или меньше. По умолчанию значения указаны как единица (1) - это реальный размер объекта. Первое значение масштабирует элемент по ширине, второе — по высоте. Отрицательные значения отображают элемент зеркально
+        </div>
+    </div>
+    <div class="rotate">
+        <div class="rotate__title">
+            Свойтство rotate
+        </div>
+        <div class="rotate__block">
+            rotate
+        </div>
+        <div class="rotate__term">
+            rotate - поворачивает элементы на заданное количество градусов, отрицательные значения поворачивают элемент против часовой стрелки, положительные — по часовой стрелке. Записываются значения как градус поворота и deg
+        </div>
+    </div>
+    <div class="skew">
+        <div class="skew__title">
+            Свойтство skew
+        </div>
+        <div class="skew__block">
+            skew
+        </div>
+        <div class="skew__term">
+            skew - деформирует (искажает) стороны объекта относительно координатных осей. Если указано одно значение, второе будет определено браузером автоматически. Записываются значения как градус поворота и deg
+
+        </div>
+    </div>
+    <div class="orign">
+        <div class="origin__title">
+            Свойтствоtransform-origin
+        </div>
+        <div class="origin_block">
+            transform-origin
+        </div>
+        <div class="origin__term">
+            transform-origin - позволяет сместить центр трансформации, относительно которого происходит изменение положения/размера/формы элемента  
+        </div>
+    </div>
+
+<hr>
+<h3>3D Трансформация </h3>
+<div class="perspective">
+    <div class="perspective__title">Свойтство perspective</div>
+    <div class="perspective__wrapper3d">
+        <div class="perspective__block">
+            <p>perspective</p>
+            <p>block</p>
+            <p>item</p>
+        </div>
+    </div>
+    <div class="perspective__term">
+        perspective, perspective-origin - установка глубины и смена точки начала координат  
+    </div>
+</div>
+<div class="translate3D">
+    <div class="translate3D__title">Свойтство rotate3d</div>
+    <div class="translate3D__wrapper3d">
+        <div class="translate3D__block">rotate3d</div>
+    </div>
+    <div class="translate3D__term">
+        translate3D - по аналогии со своим 2D братом это значение задает перемещение элемента, но, в 3D-пространстве. Помимо оси X и Y добавляется ось Z.
+    </div>
+</div>
+<div class="scale3D">
+    <div class="scale3D__title">Свойтство rotate3d</div>
+    <div class="scale3D__wrapper3d">
+        <div class="scale3D__block">scale3D</div>
+    </div>
+    <div class="scale3D__term">
+        scale3D - задает трехмерное масштабирование по одной из осей X, Y, Z
+    </div>
+</div>
+<div class="rotate3d">
+    <div class="rotate3d__title">Свойтство rotate3d</div>
+    <div class="rotate3d__wrapper3d">
+        <div class="rotate3d__block">rotate3d</div>
+    </div>
+    <div class="rotate3d__term">
+        rotate3d - вращает элемент относительно трех осей. Элемент поворачивается под углом, задаваемым последним параметром относительно вектора направления X, Y, Z
+    </div>
+</div>
+<hr>
+<div class="animatoin-wraper">
+    <div class="block-animation">
+        <div class="square-aimatronick">
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
 </body>
 </html>
