@@ -1,0 +1,586 @@
+@import "https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nabla:EDPT@0&family=Noto+Sans:ital,wdth,wght@1,62.5,427&family=Roboto+Mono:ital,wght@1,300&display=swap";
+
+body{
+    background-color: rgb(19, 19, 19);
+    color: whitesmoke;
+    margin: 5px 60px 0px 60px;
+    font-size: 22px;
+    font-family: "Bungee Spice" , "Noto Sans";
+
+}
+
+
+h1{
+    font-size: xx-large;
+    color: orange;
+    padding-bottom: 2px;
+    text-align: center;
+    text-decoration: underline #5f5f5f;
+    opacity: 0.9;
+}
+
+
+.term {
+}
+.term__1 {
+
+}
+.term__2 {
+}
+.term__3 {
+}
+.term__4 {
+}
+
+a{
+    color: aqua;
+    &:hover{
+        color: orange;
+    }
+}
+
+
+.wraper {
+    .content { 
+        margin: 0px 0px 300px 0px; 
+       
+        .content__circle {
+            background-color: whitesmoke;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: relative;
+            margin: 0px auto;
+            animation-name: white-circle; //данным тегом мы как бы связываем фрэйм и контент который анимируем , тег описывает контент 
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            // animation-play-state: initial; //тег указывает то сколько раз будет проигрываться анимация , в аднном случае бесконечно
+            animation-fill-mode: forwards; //указываем данный тег если хотим что бы в конеце анимациии у нас применились конечные свойсва // проще говоря анимация была в конечном положении
+            //свойство короткой записи animation: и прописываев name , duration ,timing , interation count-сколько раз проигрывается анимация , direction , delay , fill mode
+        }
+    }
+    
+}
+
+.content:hover .content__circle{
+    animation-play-state: running; //тег отвечает за то , каое действие будет приостанавливать анимацию 
+}
+
+//keyframes правильное написание анимации 
+@keyframes white-circle{
+//указываем точки в которых анимация будет принимать какое либо значение , можно запариться и сделать это покадрово
+//то есть между 0 и 100% поставить значение 30% 50% и все в таком роде 
+    0%{
+        top: 0px;
+
+    }
+
+    30%{
+        top: 120px;
+        box-shadow: 1px 3px orange;
+    }
+    50%{
+        top: 60px;
+        border-radius: 25%;
+        
+    }
+    
+
+    100%{
+        top: 120px;
+
+    }
+}
+
+
+.block-text {
+    margin: 0px auto;
+
+}
+.lorem {
+    background-color: bisque;
+    color: #5f5f5f;
+}
+.text{
+    display: flex;
+    .text-img {
+        
+        .text-img__sours {
+            text-align: center;
+            padding: 5px;
+        }
+        
+       
+        & img{
+            max-width: 100%;
+
+            
+        }
+    }
+    .text__1 {
+        flex: 0 1 45%;
+        color: yellow;
+        font-size: x-large;
+        padding: 10px;
+        text-align: center;
+    }
+    .text__2 {
+        flex: 0 1 45%;
+        padding: 10px;
+        color: beige;
+        font-size: x-large;
+        border: 1px solid orange ;
+        text-align: center;
+    
+    }
+}
+
+.block-colums {
+    display:flex ;
+    
+}
+.colums-titile {
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 4px;
+    max-height: 70px;
+    padding: 6px 13px 0px 13px;
+}
+.block-colums__colums {
+
+flex: 0 1 33%;
+margin: -3px;
+padding: 30px 10px 30px 10px;
+
+    
+}
+.block-colums__items {
+    border: 2px solid orange;
+    padding: 0px 0px 50px 0px;
+    
+   
+
+}
+.block-colums__img {
+    margin: 120px 0px 20px 0px;
+    padding: 0px 0px 50% 0px;
+    overflow: hidden;
+    position: relative;
+}
+.block-colums__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.block-colums__text {
+}
+
+.translate {
+    height: 500px;
+
+    
+}
+.translate__title {
+    color: yellow;
+}
+.translate__block {
+    background-color: rgb(48, 48, 48);
+    color: black;
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    transform: translate( 0px , 0px);
+    position: relative;
+    left: 45%;
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform: translate(-50%); 
+    
+    }
+
+    
+}
+.translate__term {
+    padding-top: 20px;
+}
+
+.scale {
+}
+.scale__title {
+    color: beige;
+}
+.scale__block {
+    background-color: rgb(41, 182, 182);
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    transform:scale(1 , 1);
+    position: relative;
+    left: 45%;
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:scale(1.2, 0.7)
+    
+    }
+}
+.scale__term {
+    color: yellow;
+}
+
+.rotate {
+}
+.rotate__title {
+    color: beige;
+}
+.rotate__block {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid yellow;
+    border-radius: 3px;
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    transform:scale(25deg, 0deg);
+    position: relative;
+    left: 45%;
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:rotate(25deg)
+    
+    }
+}
+.rotate__term {
+    color: whitesmoke;
+}
+
+.skew {
+
+}
+.skew__title {
+    color: beige;
+}
+.skew__block {
+    background-color: greenyellow;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    transform:skew(0deg,0deg);
+    position: relative;
+    left: 45%;
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:skew(10deg,0deg);
+        box-shadow:2px 4px grey;
+    }
+}
+
+.skew__term {
+    color: beige;
+}
+
+.orign {
+}
+.origin__title {
+    color: beige;
+}
+.origin_block {
+    background-color: rgb(89, 0, 255);
+    border: 1px solid greenyellow;
+    border-radius: 3px;
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    transform-origin: top right;
+    transform:rotate(0deg,0deg);
+    position: relative;
+    left: 45%;
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:rotate(25deg);
+    }
+}
+.origin__term {
+}
+
+
+.perspective .perspective__wrapper3d {
+    background-color: #5f5f5f;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 45%;
+
+}
+.perspective__title {
+}
+.perspective__wrapper3d {
+
+}
+.perspective__block {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 213);
+    color: black;
+    text-align: center;
+    
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform: perspective(400px) rotateX(25deg);
+    }
+}
+.perspective__term {
+    color: beige;
+    padding-top: 10px;
+}
+
+
+
+.translate3D .translate3D__wrapper3d {
+    background-color: #000000;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 45%;
+
+}
+.translate3D__title {
+    color: beige;
+}
+.translate3D__wrapper3d {
+}
+.translate3D__block {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 213);
+    color: black;
+    text-align: center;
+    
+    transform: translate3d(0px,0px,0px);
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:translate3d(20px, 20px, 60px);
+    }
+}
+.translate3D__term {
+    padding-top: 19px;
+    color: beige;
+}
+
+
+.scale3D .scale3D__wrapper3d {
+    background-color: #25a9f5;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    left: 45%;
+
+
+}
+.scale3D__title {
+    color: beige;
+}
+.scale3D__wrapper3d {
+}
+.scale3D__block {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 213);
+    color: black;
+    text-align: center;
+    
+    transform:scale3d(1, 1, 1);
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:scale3d(2, 1 ,1.3)
+    }
+
+}
+.scale3D__term {
+    color: beige;
+}
+
+.rotate3d .rotate3d__wrapper3d {
+    background-color: #25f594;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    left: 45%;
+}
+.rotate3d__title {
+    color: beige;
+}
+.rotate3d__wrapper3d {
+}
+.rotate3d__block {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 213);
+    color: black;
+    text-align: center;
+    
+    transform:rotate3d(1,1,1,0deg);
+    &:hover{ 
+        transition: all 0.5s ease-in-out 0.3s;
+        transform:rotate3d(1, 1 ,1, 360deg)
+    }
+
+}
+.rotate3d__term {
+}
+
+
+.animatoin-wraper {
+    height: 400px;
+    .block-animation {
+        padding: 0px 0px 300px 0px;
+        .square-aimatronick {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            
+            position: relative;
+            animation-name: square-aimatronick;
+            animation-timing-function: ease-in-out;
+            animation-duration: 8s;
+            animation-delay: 2s;
+        
+            &:hover{
+                background-color: #5e5a5a;
+                
+            }
+        }
+    }
+   
+}
+
+
+@keyframes square-aimatronick{
+    0%{
+        left: 0px;
+        border: 1px solid aqua;
+    }
+
+    25%{
+        left: 795px;
+        top: 0px;
+        border: 1px solid #25f594;
+    }
+
+    50%{
+        left: 795px;
+        top: 60px;
+        border: #25a9f5;
+    }
+
+    75%{
+        left: 795px;
+        top: 0px;
+        border: yellow;
+    }
+
+    100%{
+        left: 1583px;
+        border: orange;
+    }
+}
+
+
+.pading-border {
+    border: 2px solid grey;
+    .border-term__1 {
+        max-width: 800px;
+        margin: 0px auto;
+        box-sizing: border-box;
+    }
+    .border-term__2 {
+         
+    }
+    .border-term__3 {
+    }
+    .border-term__4 {
+    }
+    .border-term__5 {
+    }
+}
+
+.wraper-grid {
+    
+}
+.wraper-content {
+    h2{
+        border: 1px solid yellow;
+        display: inline-block;
+        padding: 10px;
+    }
+    
+}
+.term {
+    max-width: 600px;
+    position: relative;
+}
+.term__body {
+    display: grid;       //с помощью лперетора fitcontent м ыможем ограничивать максимальную ширину - это тоже самое что и auto но с онраничениями по макс.ширине-вытоте //с помощью тега auto колонки будут подстраиваться под размер контента     //minmax оператор обозначает - задает минимальную и максимальную ширину колонки при  этом если хотим указать в fr то он примет fr только в маскимальном значении то есть (1fr 200px)- работать не будет 
+    grid-template-columns: repeat(3,1fr);//управляет размерами колонок дисплей грида //если мы хотим что бы наши колонки были одинаковы то можем применить еденицу измерения grid - а именно fr 
+    grid-template-rows: repeat(2,100px);//управляет размерами рядов 
+    //если мы хотим записать одно и то же значение для рамера колонок(ширины , высоты ) то просто можем применить оператор repeat(3,1fr) где первое значение это сколько колонок в второе их размер 
+}
+.term__grid {
+    background-color: #000000;
+    border: 1px dashed rgb(247, 247, 246);
+    text-align: center;
+    color: orange;
+    padding: 20px;
+}
+
+
+
+
+.container-grid {  
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 150px 1fr; //для короткой записи колонок и столбиков мжем указать тег grid-template - где соответсвенно в теге template указываем значение  слолбцов а потом колонок
+    grid-template-rows: 100px 1fr;
+    //grid-template-areas: 
+    //        "header header" 
+    //        "side content"
+    //альтернатива 
+    grid-template: 
+        [start] "header header" 100px [row2]
+        [row2] "side main" 1fr [row-end] / 150px 1fr;
+
+    //grid-auto-flow: row - размещает элементы в авто режиме в ряди таких рядов может быть сколько угодно 
+    //column-встанут в колонку 
+    //dence будет заполнять всю сетку - пространво даже изменяя порядок
+}
+.grid-header,
+.grid-aside-bar,
+.grid-body-content {
+    padding: 30px;
+    margin: 0px 0px 15px 0px;
+    border: 2px dashed grey;
+
+}
+
+.grid-header {
+    grid-area: header;
+}
+.grid-body-content {
+    grid-area: main;
+}
+.grid-aside-bar {
+    grid-area: side;
+}
+
+
+
