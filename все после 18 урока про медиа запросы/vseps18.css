@@ -451,7 +451,7 @@ a:hover {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-template-rows: 100px 1fr;
-  grid-template: [start] "header header" 100px [row2] [row2] "side main" 1fr [row-end]/150px 1fr;
+  grid-template-areas: "header header" "side main";
 }
 
 .grid-header,
@@ -472,4 +472,49 @@ a:hover {
 
 .grid-aside-bar {
   grid-area: side;
+}
+
+.raz-grid .raz-grid__wraper {
+  max-width: 900px;
+}
+.raz-grid .raz-grid__content {
+  position: relative;
+}
+.raz-grid .raz-grid-content-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  border: 1px dashed grey;
+  row-gap: 10px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.raz-grid .grid-block__1 {
+  text-align: center;
+  border: 1px dashed grey;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.raz-grid .grid-block__2 {
+  text-align: center;
+  border: 1px dashed grey;
+}
+.raz-grid .grid-block__3 {
+  text-align: center;
+  border: 1px dashed grey;
+  margin: auto;
+}
+.raz-grid .grid-block__4 {
+  text-align: center;
+  border: 1px dashed grey;
+}
+.raz-grid .grid-block__5 {
+  text-align: center;
+  border: 1px dashed grey;
+}
+.raz-grid .grid-block__6 {
+  text-align: center;
+  border: 1px dashed grey;
 }/*# sourceMappingURL=vseps18.css.map */

@@ -551,16 +551,15 @@ padding: 30px 10px 30px 10px;
     display: grid;
     grid-template-columns: 150px 1fr; //для короткой записи колонок и столбиков мжем указать тег grid-template - где соответсвенно в теге template указываем значение  слолбцов а потом колонок
     grid-template-rows: 100px 1fr;
-    //grid-template-areas: 
-    //        "header header" 
-    //        "side content"
+    grid-template-areas: 
+           "header header" 
+           "side main"
     //альтернатива 
-    grid-template: 
-        [start] "header header" 100px [row2]
-        [row2] "side main" 1fr [row-end] / 150px 1fr;
+    //grid-template: 
+     //   [start] "header header" 100px [row2]
+     //   [row2] "side main" 1fr [row-end] / 150px 1fr;
 
-    //grid-auto-flow: row - размещает элементы в авто режиме в ряди таких рядов может быть сколько угодно 
-    //column-встанут в колонку 
+    //grid-auto-flow: row - размещает элементы в авто режиме в ряди таких рядов может быть сколько угодно //column-встанут в колонку 
     //dence будет заполнять всю сетку - пространво даже изменяя порядок
 }
 .grid-header,
@@ -582,5 +581,65 @@ padding: 30px 10px 30px 10px;
     grid-area: side;
 }
 
+//для элементов сетки лучше не указыват padding/margin так как разные браузеры воспринимаю сетку по разному 
+//margin auto позволяет выравнивать элементы сетки 
 
+//размещение элементов с помощью сетки 
 
+.raz-grid {
+    .raz-grid__wraper {
+        max-width: 900px;
+    }
+    .raz-grid__content {
+        position: relative;
+    }
+    .raz-grid-content-items {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,100px) ;
+        border: 1px dashed grey;
+        row-gap: 10px;//создает отступ между строками 
+        column-gap: 20px;//создает отступ по бокам колонок
+        //gap созает отступ и между строк и между колонок 
+
+        //justify-items: end; // отвечает за горизонтальное вырвнивание 
+                                                                        //имеют значение start / end
+        //align-items: end; // отвечает за вертикальое вырвнивание 
+    }
+
+    
+    .grid-block__1 {
+        text-align: center;
+        border: 1px dashed grey;
+        grid-row-start:1 ;//означает сколько колонок по горизонтали займет 
+        grid-row-end: 2;
+        grid-column-start: 1;//означает сколько колонок по вертикали займет 
+        grid-column-end:2;
+
+        //grid-row если мы хотим изменить положение элемента / поменять местами то пропишем col2 - если м ызадавали в разметки грид имя элементу / так же можно и изменять размер с помощью записей 1/2 
+        //grid-start
+
+        
+    }
+    .grid-block__2 {
+        text-align: center;
+        border: 1px dashed grey;
+    }
+    .grid-block__3 {
+        text-align: center;
+        border: 1px dashed grey;
+        margin: auto;
+    }
+    .grid-block__4 {
+        text-align: center;
+        border: 1px dashed grey;
+    }
+    .grid-block__5 {
+        text-align: center;
+        border: 1px dashed grey;
+    }
+    .grid-block__6 {
+        text-align: center;
+        border: 1px dashed grey;
+    }
+}
