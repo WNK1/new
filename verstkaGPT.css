@@ -1,0 +1,53 @@
+@import "https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nabla:EDPT@0&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+body {
+  color: #333;
+  font-family: "Roboto";
+}
+body .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper .header {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .header .header__container-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0px auto;
+}
+.wrapper .header .header__title-logo {
+  background-color: azure;
+}
+.wrapper .header .header__title-logo span {
+  color: #ff6b6b;
+}
+.wrapper .header .header__nav ul {
+  display: flex;
+  padding: 2px 10px;
+}
+.wrapper .header .header__nav ul li {
+  list-style-type: none;
+}
+.wrapper .header .header__list {
+  display: block;
+}
+.wrapper .main {
+  background-color: #ff6b6b;
+}
+.wrapper .main .main__container-1 {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+.wrapper .about {
+  background-color: white;
+}
+.wrapper .about__title {
+  color: #ff6b6b;
+}
+.wrapper .footer__title {
+  color: #ff6b6b;
+}/*# sourceMappingURL=verstkaGPT.css.map */
