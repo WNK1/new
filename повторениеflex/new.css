@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 200vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1, h2 {
+  color: #1e88e5;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.header__logo {
+  color: #1e88e5;
+  margin-left: 40px;
+  padding: 0px 10px;
+}
+.header__logo:hover {
+  transform: rotate3d(1, 1, 1, 5deg);
+}
+
+.header__nav {
+  display: flex;
+}
+.header__nav .nav-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.header__nav .nav-list ul li {
+  margin: 20px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: orange;
+  border-bottom: 2px solid white;
+}
+
+li a:focus {
+  background-color: grey;
+}
+
+.main .container-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.main .container-main .main__first-block {
+  background-color: #121212;
+  align-items: end;
+}
+.main .container-main .main__title {
+  text-align: center;
+}
+.main .container-main .main__info {
+  text-align: center;
+}
+.main .container-main .main__second-block {
+  background-color: #333;
+  align-items: center;
+}
+.main .container-main .main__theed-block {
+  background-color: #121212;
+  align-items: start;
+}
+
+.footer {
+  background-color: #333;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  height: 75px;
+}/*# sourceMappingURL=new.css.map */

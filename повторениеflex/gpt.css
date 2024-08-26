@@ -1,0 +1,95 @@
+/* Variables for colors */
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Flex container utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  width: 100%;
+  padding: 20px 0;
+}
+.header .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 24px;
+  color: #1e88e5;
+}
+.header .nav .nav-list {
+  list-style: none;
+  display: flex;
+}
+.header .nav .nav-list li {
+  margin-left: 20px;
+}
+.header .nav .nav-list li a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.header .nav .nav-list li a:hover {
+  color: #1e88e5;
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .section {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+.main-content .section:nth-child(even) {
+  background-color: #333;
+}
+.main-content .section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1e88e5;
+}
+.main-content .section p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+  color: #f0f0f0;
+}/*# sourceMappingURL=gpt.css.map */
