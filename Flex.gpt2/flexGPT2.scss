@@ -1,0 +1,27 @@
+.header {
+    background-color: #445162;
+    .header__container {
+        display: flex;
+        .container-left-block {
+            display: flex;
+            flex-direction: column;
+            .block__title {
+                font-family: Arial;
+                font-size: 60px;
+                line-height: 1.2;
+                font-weight: 400;
+                text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+                color: #ffffff;
+                            }
+            .block-main-info {
+                background: url(check_icon_348.png) repeat-y;
+            }
+            
+        }
+       
+    }
+   
+}
+
+.container-right-block img{
+}

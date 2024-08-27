@@ -1,0 +1,21 @@
+.header {
+  background-color: #445162;
+}
+.header .header__container {
+  display: flex;
+}
+.header .header__container .container-left-block {
+  display: flex;
+  flex-direction: column;
+}
+.header .header__container .container-left-block .block__title {
+  font-family: Arial;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.header .header__container .container-left-block .block-main-info {
+  background: url(check_icon_348.png) repeat-y;
+}/*# sourceMappingURL=flexGPT2.css.map */
