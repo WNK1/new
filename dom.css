@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
+body {
+  background-color: rgb(12, 12, 12);
+  font-family: "Sixtyfour Convergence";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.navigation .navigation__container {
+  display: flex;
+  width: maxmin(900px);
+  margin: 0px auto;
+  justify-content: flex-end;
+}
+.navigation .navigation__container .navigation__ul {
+  display: flex;
+  list-style-type: none;
+}
+.navigation .navigation__container .navigation__ul .ul__1 {
+  margin: 0px 5px;
+}
+.navigation .navigation__container .navigation__ul .ul__2 {
+  margin: 0px 5px;
+}
+.navigation .navigation__container .navigation__ul .ul__3 {
+  margin: 0px 5px;
+}
+
+.header {
+  margin-top: 55px;
+}
+.header .header__container {
+  display: flex;
+  justify-content: center;
+}
+.header .header__container .h1 {
+  display: flex;
+  font-size: 10px;
+  animation: vision 1.3s ease-in-out;
+}
+
+.main .main__container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main .main__container .main__animation {
+  display: flex;
+}
+.main .main__container .main__animation .animation__first {
+  animation: zagruzka 1.2s ease-in-out 0.3s infinite;
+}
+.main .main__container .main__animation .animation__second {
+  animation: zagruzka 1.2s ease-in-out 0.6s infinite;
+}
+.main .main__container .main__animation .animation__threed {
+  animation: zagruzka 1.2s ease-in-out 0.9s infinite;
+}
+
+@keyframes vision {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zagruzka {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=dom.css.map */
