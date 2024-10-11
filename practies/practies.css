@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(37, 37, 37);
+  color: whitesmoke;
+}
+
+.full-page {
+  height: 300vh;
+  width: 100%;
+}
+.full-page .full-page__container {
+  width: 90%;
+  margin: 0px auto;
+}
+.full-page .full-page__container .navigation {
+  height: 40px;
+}
+.full-page .full-page__container .navigation .navigation__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.full-page .full-page__container .navigation .navigation__container .navigation__my-logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.full-page .full-page__container .navigation .navigation__container .navigation__my-logo .my-logo__external-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  height: 100%;
+  width: 70px;
+  border-radius: 10px;
+  background-color: aqua;
+  font-size: 20px;
+}
+.full-page .full-page__container .navigation .navigation__container .navigation__my-logo .my-logo__external-block .my-logo__logo {
+  transform: rotate(-20deg);
+  color: black;
+}
+.full-page .full-page__container .navigation .navigation__container .navigation__nav-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.full-page .full-page__container .header .header__container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+.full-page .full-page__container .header .header__container .header__first-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+  margin: 0px 3px;
+}
+.full-page .full-page__container .header .header__container .header__first-block .first-block__foto {
+  margin: 0px 3px;
+  width: 100%;
+  height: 100%;
+}
+.full-page .full-page__container .header .header__container .header__second-block {
+  width: 30%;
+  height: 500px;
+  margin: 0px 3px;
+}
+.full-page .full-page__container .header .header__container .header__second-block .second-block__foto {
+  margin: 0px 3px;
+  width: 100%;
+  height: 100%;
+}
+.full-page .full-page__container .header .header__container .header__thrid-block {
+  width: 30%;
+  height: 500px;
+  margin: 0px 3px;
+}
+.full-page .full-page__container .header .header__container .header__thrid-block .thrid-block__foto {
+  margin: 0px 3px;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=practies.css.map */
