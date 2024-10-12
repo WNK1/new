@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(black, rgb(29, 29, 29));
+  height: 300vh;
+  color: whitesmoke;
+}
+
+.all__container {
+  width: 85%;
+  margin: 0px auto;
+}
+.all__container .navigation {
+  height: 100%;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+.all__container .navigation .navigation__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.all__container .navigation .navigation__container .navigation__logo {
+  display: flex;
+}
+.all__container .navigation .navigation__container .navigation__logo .logo__front-logo {
+  width: 140px;
+  height: 70px;
+}
+.all__container .navigation .navigation__container .navigation__logo .logo__front-logo img {
+  width: 140px;
+  height: 70px;
+}
+.all__container .navigation .navigation__container .navigation__blocks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+.all__container .navigation .navigation__container .navigations__batton {
+  display: flex;
+}
+.all__container .navigation .navigation__container .navigations__batton .button__nav {
+  margin: 0px 7px 0px 0px;
+}
+.all__container .navigation .navigation__container .navigations__batton .indicator {
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid whitesmoke;
+  padding: 1px 2px 3px;
+}/*# sourceMappingURL=site.css.map */
