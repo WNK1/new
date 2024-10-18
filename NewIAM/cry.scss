@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -168,7 +171,7 @@
     }
   }
   
-  .crypto-card {
+  .crypto-card__1 , .crypto-card__2 ,.crypto-card__3{
     background-color: #222;
     padding: 30px;
     border-radius: 10px;
@@ -185,7 +188,21 @@
     font-size: 1.5rem;
   }
   
-  .crypto-card:hover {
+  .crypto-card__1:hover {
+    background-color: #ff007a;
+    transform: translateY(-10px);
+    a{
+      text-decoration: none;
+    }
+  }
+  .crypto-card__2:hover {
+    background-color: #ff007a;
+    transform: translateY(-10px);
+    a{
+      text-decoration: none;
+    }
+  }
+  .crypto-card__3:hover {
     background-color: #ff007a;
     transform: translateY(-10px);
     a{
@@ -216,7 +233,7 @@
   /* Footer */
     
   .footer {
-    margin-top:  200px;;
+    margin-top:  80px;;
     .footer__container {
         display:flex;
         justify-content: space-between;
@@ -236,4 +253,32 @@
   
 }
 
+
+.list {
+  display: flex;
   
+  width: 85%;
+  height: 200px;
+  align-items: center;
+  margin: 0px auto;
+    .uls {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 20px;
+      font-family: "Sixtyfour Convergence";
+    
+    .fir {
+      
+    }
+    .sec {
+    }
+    .trid {
+     }
+    }
+  .uls li{
+    list-style-type: none;
+  }
+    
+  
+}

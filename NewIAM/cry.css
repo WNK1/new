@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -162,7 +163,7 @@ body {
   text-decoration: none;
 }
 
-.crypto-card {
+.crypto-card__1, .crypto-card__2, .crypto-card__3 {
   background-color: #222;
   padding: 30px;
   border-radius: 10px;
@@ -177,11 +178,27 @@ body {
   font-size: 1.5rem;
 }
 
-.crypto-card:hover {
+.crypto-card__1:hover {
   background-color: #ff007a;
   transform: translateY(-10px);
 }
-.crypto-card:hover a {
+.crypto-card__1:hover a {
+  text-decoration: none;
+}
+
+.crypto-card__2:hover {
+  background-color: #ff007a;
+  transform: translateY(-10px);
+}
+.crypto-card__2:hover a {
+  text-decoration: none;
+}
+
+.crypto-card__3:hover {
+  background-color: #ff007a;
+  transform: translateY(-10px);
+}
+.crypto-card__3:hover a {
   text-decoration: none;
 }
 
@@ -205,7 +222,7 @@ body {
 }
 /* Footer */
 .footer {
-  margin-top: 200px;
+  margin-top: 80px;
 }
 .footer .footer__container {
   display: flex;
@@ -219,4 +236,22 @@ body {
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  width: 85%;
+  height: 200px;
+  align-items: center;
+  margin: 0px auto;
+}
+.list .uls {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-family: "Sixtyfour Convergence";
+}
+.list .uls li {
+  list-style-type: none;
 }/*# sourceMappingURL=cry.css.map */
