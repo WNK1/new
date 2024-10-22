@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
     loader.classList.add('fade-out');
     setTimeout(() => {
       loader.style.display = 'none';
-    }, 4500);
+    }, 2500);
   });
   
 
